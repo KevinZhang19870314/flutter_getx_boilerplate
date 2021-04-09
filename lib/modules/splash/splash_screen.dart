@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_boilerplate/routes/routes.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -11,6 +13,12 @@ class SplashScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Splash...'),
+          TextButton(
+            onPressed: () {
+              Get.toNamed(Routes.AUTH);
+            },
+            child: Text('test'),
+          ),
         ],
       ),
     );
