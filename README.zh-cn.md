@@ -11,7 +11,6 @@
 使用Flutter 2.x搭建的一套包含预定义的文件夹结构、样式主题、API访问、状态管理、路由 & 依赖等的框架。项目结构清晰，可以很方便的作为Flutter的模板项目来使用。使用技术包括但不限于[Flutter](https://flutter.cn/)、[Dart](https://dart.dev/)、[GetX](https://pub.dev/packages/get)等。
 
 <p align='center'>
-    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/1.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/2.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/3.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/4.jpg" width="187" heght="333" />
