@@ -73,3 +73,8 @@ lib/
 ## 其他
 
 在编写过程中，因为涉及到Restful api的调用，这里我使用了[REQ|RES](https://reqres.in/)提供的免费测试api。
+
+测试使用的用户如下:
+  
+    邮箱: "eve.holt@reqres.in",
+    密码: "pistol"
