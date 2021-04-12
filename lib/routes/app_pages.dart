@@ -1,4 +1,5 @@
 import 'package:flutter_getx_boilerplate/modules/auth/auth.dart';
+import 'package:flutter_getx_boilerplate/modules/home/home.dart';
 import 'package:flutter_getx_boilerplate/modules/modules.dart';
 import 'package:get/get.dart';
 
@@ -21,6 +22,11 @@ class AppPages {
         GetPage(name: Routes.REGISTER, page: () => RegisterScreen()),
         GetPage(name: Routes.LOGIN, page: () => LoginScreen()),
       ],
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () => HomeScreen(),
+      binding: HomeBinding(),
     ),
     // GetPage(
     //     name: Routes.HOME,

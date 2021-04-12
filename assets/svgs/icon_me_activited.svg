@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>me</title>
+    <defs>
+        <linearGradient x1="-5.55630544%" y1="0%" x2="107.494358%" y2="95.1982491%" id="linearGradient-1">
+            <stop stop-color="#82DCFF" offset="0%"></stop>
+            <stop stop-color="#1ED69D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-5.55630544%" y1="42.0511676%" x2="107.494358%" y2="57.1854661%" id="linearGradient-2">
+            <stop stop-color="#82DCFF" offset="0%"></stop>
+            <stop stop-color="#1ED69D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M9.6,1.06666667 C11.9564149,1.06666667 13.8666667,2.9769184 13.8666667,5.33333333 C13.8666667,7.68974827 11.9564149,9.6 9.6,9.6 C7.24358507,9.6 5.33333333,7.68974827 5.33333333,5.33333333 C5.33333333,2.9769184 7.24358507,1.06666667 9.6,1.06666667 L9.6,1.06666667 Z M9.6,3.2 C8.42179253,3.2 7.46666667,4.15512587 7.46666667,5.33333333 C7.46666667,6.5115408 8.42179253,7.46666667 9.6,7.46666667 C10.7782075,7.46666667 11.7333333,6.5115408 11.7333333,5.33333333 C11.7333333,4.15512587 10.7782075,3.2 9.6,3.2 L9.6,3.2 Z M9.6,10.6666667 C12.448,10.6666667 18.1333333,12.0853333 18.1333333,14.9333333 L18.1333333,18.1333333 L1.06666667,18.1333333 L1.06666667,14.9333333 C1.06666667,12.0853333 6.752,10.6666667 9.6,10.6666667 L9.6,10.6666667 Z M9.6,12.6933333 C6.432,12.6933333 3.09333333,14.2506667 3.09333333,14.9333333 L3.09333333,16.1066667 L16.1066667,16.1066667 L16.1066667,14.9333333 C16.1066667,14.2506667 12.768,12.6933333 9.6,12.6933333 Z" id="path-3"></path>
+        <linearGradient x1="-28.7766044%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#2D2D2D" offset="0%"></stop>
+            <stop stop-color="#2D2D2D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Me" transform="translate(-357.000000, -826.000000)">
+            <g id="Me导航" transform="translate(-1.000000, 794.000000)">
+                <g id="me" transform="translate(358.849060, 32.680000)">
+                    <rect id="Base" x="0" y="0" width="19.2" height="19.2"></rect>
+                    <circle id="椭圆形" fill="url(#linearGradient-1)" cx="9.6" cy="5.38723041" r="2.59275834"></circle>
+                    <path d="M2.18690349,17.58 L2.18690349,14.4 C4.52764344,12.449105 6.99867561,11.4860871 9.6,11.5109465 C13.5019866,11.5482355 17.4094697,13.633573 17.4094697,14.5454732 C17.4094697,15.1534067 17.4094697,16.1649157 17.4094697,17.58 L2.18690349,17.58 Z" id="路径" fill="url(#linearGradient-2)"></path>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                    <g id="Color/02" mask="url(#mask-4)" fill="url(#linearGradient-5)">
+                        <rect id="Color" x="0" y="0" width="19.2" height="19.2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

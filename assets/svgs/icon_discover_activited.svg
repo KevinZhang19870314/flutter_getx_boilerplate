@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>发现</title>
+    <defs>
+        <linearGradient x1="-5.55630544%" y1="0%" x2="107.494358%" y2="95.1982491%" id="linearGradient-1">
+            <stop stop-color="#82DCFF" offset="0%"></stop>
+            <stop stop-color="#1ED69D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EVO-Mini" transform="translate(-115.000000, -972.000000)">
+            <g id="Transfer导航" transform="translate(0.000000, 939.600000)">
+                <g id="发现" transform="translate(116.676434, 34.000000)">
+                    <circle id="椭圆形" stroke="#000000" stroke-width="2" fill="url(#linearGradient-1)" cx="9" cy="9" r="9"></circle>
+                    <ellipse id="椭圆形" fill="#2B2B2B" cx="9" cy="9" rx="1.2" ry="1.11428571"></ellipse>
+                    <path d="M10.5446244,11.7706937 L5.21662444,13.1356491 C4.80872044,13.2400354 4.43374444,12.8919326 4.54625644,12.5131646 L6.01620844,7.565736 C6.20916844,6.91606286 6.75579244,6.40857257 7.45534444,6.22930629 L12.7834404,4.86435086 C13.1913444,4.75996457 13.5663204,5.10806743 13.4537124,5.48683543 L11.9838564,10.4343531 C11.7908004,11.0839371 11.2442724,11.5915166 10.5446244,11.7706937 Z" id="Stroke-1" stroke="#2B2B2B" stroke-width="1.728"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

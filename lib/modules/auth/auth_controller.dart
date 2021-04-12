@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_boilerplate/api/api.dart';
 import 'package:flutter_getx_boilerplate/models/models.dart';
+import 'package:flutter_getx_boilerplate/routes/app_pages.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -60,7 +61,7 @@ class AuthController extends GetxController {
       final prefs = Get.find<SharedPreferences>();
       if (res!.token.isNotEmpty) {
         prefs.setString(StorageConstants.token, res.token);
-        print('Go to Home screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+        Get.toNamed(Routes.HOME);
       }
     }
   }

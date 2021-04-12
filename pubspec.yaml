@@ -33,6 +33,9 @@ dependencies:
   wave: ^0.2.0
   fluttertoast: ^8.0.3
   flutter_easyloading: ^3.0.0
+  flutter_svg: ^0.21.0+1
+  flutter_staggered_grid_view: ^0.4.0
+  cached_network_image: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -50,9 +53,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/svgs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

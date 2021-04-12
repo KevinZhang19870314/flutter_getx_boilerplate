@@ -7,6 +7,8 @@ class ColorConstants {
   static Color secondaryDarkAppColor = Colors.white;
   static Color tipColor = hexToColor('#B6B6B6');
   static Color lightGray = Color(0xFFF6F6F6);
+  static Color black = Color(0xFF000000);
+  static Color white = Color(0xFFFFFFFF);
 }
 
 Color hexToColor(String hex) {

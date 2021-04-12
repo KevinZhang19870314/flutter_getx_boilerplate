@@ -10,4 +10,8 @@ class ApiProvider extends BaseProvider {
   Future<Response> register(String path, RegisterRequest data) {
     return post(path, data.toJson());
   }
+
+  Future<Response> getUsers(String path) {
+    return get(path);
+  }
 }
