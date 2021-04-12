@@ -22,22 +22,22 @@ class RegisterScreen extends StatelessWidget {
           body: Container(
             alignment: Alignment.center,
             padding: EdgeInsets.symmetric(horizontal: 35.0),
-            child: _buildForms(),
+            child: _buildForms(context),
           ),
         ),
       ],
     );
   }
 
-  Widget _buildForms() {
+  Widget _buildForms(BuildContext context) {
     return Form(
-      key: controller.formKey,
+      key: controller.registerFormKey,
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             InputField(
-              controller: controller.emailController,
+              controller: controller.registerEmailController,
               keyboardType: TextInputType.text,
               labelText: 'Email address',
               placeholder: 'Enter Email Address',
@@ -54,7 +54,7 @@ class RegisterScreen extends StatelessWidget {
             ),
             CommonWidget.rowHeight(),
             InputField(
-              controller: controller.passwordController,
+              controller: controller.registerPasswordController,
               keyboardType: TextInputType.emailAddress,
               labelText: 'Password',
               placeholder: 'Enter Password',
@@ -64,8 +64,8 @@ class RegisterScreen extends StatelessWidget {
                   return 'Password is required.';
                 }
 
-                if (value.length < 8 || value.length > 15) {
-                  return 'Password should be 8~15 characters';
+                if (value.length < 6 || value.length > 15) {
+                  return 'Password should be 6~15 characters';
                 }
 
                 return null;
@@ -73,14 +73,14 @@ class RegisterScreen extends StatelessWidget {
             ),
             CommonWidget.rowHeight(),
             InputField(
-              controller: controller.confirmPasswordController,
+              controller: controller.registerConfirmPasswordController,
               keyboardType: TextInputType.emailAddress,
               labelText: 'Confirm Password',
               placeholder: 'Enter Password',
               password: true,
               validator: (value) {
-                if (controller.passwordController.text !=
-                    controller.confirmPasswordController.text) {
+                if (controller.registerPasswordController.text !=
+                    controller.registerConfirmPasswordController.text) {
                   return 'Confirm Password is not consistence with Password.';
                 }
 
@@ -94,9 +94,9 @@ class RegisterScreen extends StatelessWidget {
             AppCheckbox(
               label:
                   'I have read and agreed to the Terms & Conditions and Privay Policy of Demo.',
-              checked: controller.termsChecked,
+              checked: controller.registerTermsChecked,
               onChecked: (val) {
-                controller.termsChecked = val!;
+                controller.registerTermsChecked = val!;
               },
             ),
             CommonWidget.rowHeight(height: 80),
@@ -104,7 +104,7 @@ class RegisterScreen extends StatelessWidget {
               text: 'Sign Up',
               backgroundColor: Colors.white,
               onPressed: () {
-                print('Sign Up');
+                controller.register(context);
               },
             ),
           ],

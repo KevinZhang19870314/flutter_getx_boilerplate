@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-class LoginRequest {
-  LoginRequest({
+class RegisterRequest {
+  RegisterRequest({
     required this.email,
     required this.password,
   });
@@ -9,12 +9,13 @@ class LoginRequest {
   String email;
   String password;
 
-  factory LoginRequest.fromRawJson(String str) =>
-      LoginRequest.fromJson(json.decode(str));
+  factory RegisterRequest.fromRawJson(String str) =>
+      RegisterRequest.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
 
-  factory LoginRequest.fromJson(Map<String, dynamic> json) => LoginRequest(
+  factory RegisterRequest.fromJson(Map<String, dynamic> json) =>
+      RegisterRequest(
         email: json["email"],
         password: json["password"],
       );

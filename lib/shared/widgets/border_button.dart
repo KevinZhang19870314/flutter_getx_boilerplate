@@ -57,7 +57,8 @@ class BorderButton extends StatelessWidget {
                   Text(
                     _text,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
                       color: hexToColor('#2F9AA0'),
                     ),
                   )

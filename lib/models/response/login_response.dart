@@ -2,10 +2,10 @@ import 'dart:convert';
 
 class LoginResponse {
   LoginResponse({
-    this.token,
+    required this.token,
   });
 
-  String? token;
+  String token;
 
   factory LoginResponse.fromRawJson(String str) =>
       LoginResponse.fromJson(json.decode(str));

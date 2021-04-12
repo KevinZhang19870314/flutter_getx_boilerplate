@@ -19,6 +19,7 @@ class AppPages {
       binding: AuthBinding(),
       children: [
         GetPage(name: Routes.REGISTER, page: () => RegisterScreen()),
+        GetPage(name: Routes.LOGIN, page: () => LoginScreen()),
       ],
     ),
     // GetPage(

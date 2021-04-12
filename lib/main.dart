@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_getx_boilerplate/shared/shared.dart';
 import 'package:get/get.dart';
 
 import 'app_binding.dart';
@@ -12,6 +14,7 @@ void main() async {
   await DenpendencyInjection.init();
 
   runApp(App());
+  configLoading();
 }
 
 class App extends StatelessWidget {
@@ -30,6 +33,23 @@ class App extends StatelessWidget {
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),
+      builder: EasyLoading.init(),
     );
   }
+}
+
+void configLoading() {
+  EasyLoading.instance
+    ..indicatorType = EasyLoadingIndicatorType.threeBounce
+    ..loadingStyle = EasyLoadingStyle.custom
+    // ..indicatorSize = 45.0
+    ..radius = 10.0
+    // ..progressColor = Colors.yellow
+    ..backgroundColor = ColorConstants.lightGray
+    ..indicatorColor = hexToColor('#64DEE0')
+    ..textColor = hexToColor('#64DEE0')
+    // ..maskColor = Colors.red
+    ..userInteractions = false
+    ..dismissOnTap = false
+    ..animationStyle = EasyLoadingAnimationStyle.scale;
 }

@@ -32,6 +32,7 @@ dependencies:
   shared_preferences: ^2.0.5
   wave: ^0.2.0
   fluttertoast: ^8.0.3
+  flutter_easyloading: ^3.0.0
 
 dev_dependencies:
   flutter_test:
