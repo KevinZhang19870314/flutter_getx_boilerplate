@@ -1,7 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter_getx_boilerplate/api/api.dart';
 import 'package:flutter_getx_boilerplate/models/response/users_response.dart';
 import 'package:flutter_getx_boilerplate/modules/home/home.dart';
+import 'package:flutter_getx_boilerplate/routes/routes.dart';
+import 'package:flutter_getx_boilerplate/shared/shared.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeController extends GetxController {
   final ApiRepository apiRepository;
@@ -9,16 +14,39 @@ class HomeController extends GetxController {
 
   var currentTab = MainTabs.home.obs;
   var users = Rxn<UsersResponse>();
+  var user = Rxn<Datum>();
 
   @override
   void onInit() async {
     super.onInit();
+  }
 
+  void loadUsers() async {
     var _users = await apiRepository.getUsers();
     if (_users!.data!.length > 0) {
       users.value = _users;
       users.refresh();
+      _saveUserInfo(_users);
     }
+  }
+
+  void signout() {
+    var prefs = Get.find<SharedPreferences>();
+    prefs.clear();
+
+    Get.toNamed(Routes.AUTH);
+  }
+
+  void _saveUserInfo(UsersResponse users) {
+    var random = new Random();
+    var index = random.nextInt(users.data!.length);
+    user.value = users.data![index];
+    var prefs = Get.find<SharedPreferences>();
+    prefs.setString(StorageConstants.userInfo, users.data![index].toRawJson());
+
+    // var userInfo = prefs.getString(StorageConstants.userInfo);
+    // var userInfoObj = Datum.fromRawJson(xx!);
+    // print(userInfoObj);
   }
 
   void switchTab(index) {

@@ -10,6 +10,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 class MainTab extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
+    controller.loadUsers();
+
     return Scaffold(
       body: Obx(
         () => StaggeredGridView.countBuilder(
