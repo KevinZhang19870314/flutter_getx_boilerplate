@@ -10,6 +10,15 @@ During my study of Flutter, I have been using the flutter_bloc state management 
 
 Use Flutter 2.x to build a set of features containing predefined folder structure, style themes, API access, state management, routing & dependencies, etc. The project structure is clear and can be easily used as a Flutter template project. Technologies used include but are not limited to [Flutter](https://flutter.cn/), [Dart](https://dart.dev/), [GetX](https://pub.dev/packages/get), etc.
 
+<p align='center'>
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/1.jpg" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/2.jpg" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/3.jpg" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/4.jpg" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/5.jpg" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/6.jpg" />
+</p>
+
 ## Installation & Use
 
 **Step 1:**
