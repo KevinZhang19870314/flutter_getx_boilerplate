@@ -10,15 +10,20 @@ class AuthController extends GetxController {
   final ApiRepository apiRepository;
   AuthController({required this.apiRepository});
 
-  final registerFormKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> registerFormKey = GlobalKey<FormState>();
   final registerEmailController = TextEditingController();
   final registerPasswordController = TextEditingController();
   final registerConfirmPasswordController = TextEditingController();
   bool registerTermsChecked = false;
 
-  final loginFormKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
   final loginEmailController = TextEditingController();
   final loginPasswordController = TextEditingController();
+
+  @override
+  void onInit() {
+    super.onInit();
+  }
 
   @override
   void onReady() {
@@ -64,5 +69,17 @@ class AuthController extends GetxController {
         Get.toNamed(Routes.HOME);
       }
     }
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+
+    registerEmailController.dispose();
+    registerPasswordController.dispose();
+    registerConfirmPasswordController.dispose();
+
+    loginEmailController.dispose();
+    loginPasswordController.dispose();
   }
 }

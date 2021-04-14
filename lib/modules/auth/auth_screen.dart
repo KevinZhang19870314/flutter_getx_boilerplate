@@ -7,9 +7,12 @@ import 'package:get/get.dart';
 class AuthScreen extends GetView<AuthController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: _buildItems(context),
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: Scaffold(
+        body: Center(
+          child: _buildItems(context),
+        ),
       ),
     );
   }

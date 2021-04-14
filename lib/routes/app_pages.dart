@@ -28,21 +28,5 @@ class AppPages {
       page: () => HomeScreen(),
       binding: HomeBinding(),
     ),
-    // GetPage(
-    //     name: Routes.HOME,
-    //     page: () => HomeView(),
-    //     binding: HomeBinding(),
-    //     children: [
-    //       GetPage(
-    //         name: Routes.COUNTRY,
-    //         page: () => CountryView(),
-    //         children: [
-    //           GetPage(
-    //             name: Routes.DETAILS,
-    //             page: () => DetailsView(),
-    //           ),
-    //         ],
-    //       ),
-    //     ]),
   ];
 }

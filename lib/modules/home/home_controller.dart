@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter_getx_boilerplate/api/api.dart';
 import 'package:flutter_getx_boilerplate/models/response/users_response.dart';
 import 'package:flutter_getx_boilerplate/modules/home/home.dart';
-import 'package:flutter_getx_boilerplate/routes/routes.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -34,7 +33,8 @@ class HomeController extends GetxController {
     var prefs = Get.find<SharedPreferences>();
     prefs.clear();
 
-    Get.toNamed(Routes.AUTH);
+    // Get.back();
+    NavigatorHelper.popLastScreens(popCount: 2);
   }
 
   void _saveUserInfo(UsersResponse users) {
