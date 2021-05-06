@@ -15,12 +15,26 @@ class HomeController extends GetxController {
   var users = Rxn<UsersResponse>();
   var user = Rxn<Datum>();
 
+  late MainTab mainTab;
+  late DiscoverTab discoverTab;
+  late ResourceTab resourceTab;
+  late InboxTab inboxTab;
+  late MeTab meTab;
+
   @override
   void onInit() async {
     super.onInit();
+
+    mainTab = MainTab();
+    loadUsers();
+
+    discoverTab = DiscoverTab();
+    resourceTab = ResourceTab();
+    inboxTab = InboxTab();
+    meTab = MeTab();
   }
 
-  void loadUsers() async {
+  Future<void> loadUsers() async {
     var _users = await apiRepository.getUsers();
     if (_users!.data!.length > 0) {
       users.value = _users;

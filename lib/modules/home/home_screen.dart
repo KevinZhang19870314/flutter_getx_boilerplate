@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_boilerplate/modules/home/home.dart';
-import 'package:flutter_getx_boilerplate/modules/home/tabs/main_tab.dart';
 import 'package:flutter_getx_boilerplate/modules/home/tabs/tabs.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
 
@@ -68,17 +67,17 @@ class HomeScreen extends GetView<HomeController> {
   Widget _buildContent(MainTabs tab) {
     switch (tab) {
       case MainTabs.home:
-        return MainTab();
+        return controller.mainTab;
       case MainTabs.discover:
-        return DiscoverTab();
+        return controller.discoverTab;
       case MainTabs.resource:
-        return ResourceTab();
+        return controller.resourceTab;
       case MainTabs.inbox:
-        return InboxTab();
+        return controller.inboxTab;
       case MainTabs.me:
-        return MeTab();
+        return controller.meTab;
       default:
-        return MainTab();
+        return controller.mainTab;
     }
   }
 
