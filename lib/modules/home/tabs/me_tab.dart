@@ -155,9 +155,11 @@ class MeTab extends GetView<HomeController> {
                 onTap: () {},
               ),
               IconTitleItem(
-                title: 'Inbox',
+                title: 'Issue_1388',
                 icon: 'assets/svgs/icon_inbox.svg',
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(Routes.I1388);
+                },
               ),
               SizedBox(
                 height: 8,
