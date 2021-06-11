@@ -17,6 +17,7 @@ class HomeScreen extends GetView<HomeController> {
 
   Widget _buildWidget() {
     return Scaffold(
+      // resizeToAvoidBottomInset: false,
       body: Center(
         child: _buildContent(controller.currentTab.value),
       ),
