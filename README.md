@@ -1,6 +1,6 @@
 # flutter_getx_boilerplate
 
-**Languages: English (this file), [Chinese](README.zh-cn.md).**
+**Languages: English (this file), [中文](README.zh-cn.md).**
 
 ## Introduction
 
