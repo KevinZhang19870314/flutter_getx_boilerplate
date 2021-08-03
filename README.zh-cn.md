@@ -20,6 +20,7 @@
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/6.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/7.jpg" width="187" heght="333" />
     <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/8.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/9.jpg" width="187" heght="333" />
 </p>
 
 ## 安装 & 使用
@@ -82,3 +83,6 @@ lib/
   
     邮箱: "eve.holt@reqres.in",
     密码: "pistol"
+
+感兴趣的朋友扫码进Flutter & Web技术交流群，我们一起讨论Flutter的未来。
+<img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/weixin.jpg" width="187" heght="333" />
