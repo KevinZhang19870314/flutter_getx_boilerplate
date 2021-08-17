@@ -4,16 +4,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import 'msg_arrow_painter.dart';
+import 'msg_box.dart';
 
-class ReceiveMsgBox extends StatelessWidget {
+class ReceiveMsgBox extends MsgBox {
   final String message;
-  const ReceiveMsgBox({
-    Key? key,
-    required this.message,
-  }) : super(key: key);
+  final AnimationController animationController;
+  const ReceiveMsgBox(
+      {Key? key, required this.message, required this.animationController})
+      : super(key: key, animationController: animationController);
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildWidgets(BuildContext context) {
     final messageTextGroup = Flexible(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,

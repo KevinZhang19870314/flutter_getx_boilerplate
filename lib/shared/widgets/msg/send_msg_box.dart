@@ -2,16 +2,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import 'msg_arrow_painter.dart';
+import 'msg_box.dart';
 
-class SendMsgBox extends StatelessWidget {
+class SendMsgBox extends MsgBox {
   final String message;
-  const SendMsgBox({
-    Key? key,
-    required this.message,
-  }) : super(key: key);
+  final AnimationController animationController;
+  const SendMsgBox(
+      {Key? key, required this.message, required this.animationController})
+      : super(key: key, animationController: animationController);
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildWidgets(BuildContext context) {
     final messageTextGroup = Flexible(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
