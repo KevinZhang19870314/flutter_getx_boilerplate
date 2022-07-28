@@ -1,5 +1,8 @@
 # flutter_getx_boilerplate
 
+## master branch: Fluter 3.0.5 version
+## Flutter-2.x branch: Flutter 2.x version
+
 **Languages: English (this file), [中文](README.zh-cn.md).**
 
 ## Introduction
