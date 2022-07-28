@@ -21,7 +21,7 @@ class MainTab extends GetView<HomeController> {
   }
 
   Widget _buildGridView() {
-    return StaggeredGridView.countBuilder(
+    return MasonryGridView.count(
       crossAxisCount: 4,
       itemCount: data!.length,
       itemBuilder: (BuildContext context, int index) => new Container(
@@ -43,10 +43,6 @@ class MainTab extends GetView<HomeController> {
           ],
         ),
       ),
-      staggeredTileBuilder: (int index) =>
-          new StaggeredTile.count(2, index.isEven ? 3 : 2),
-      mainAxisSpacing: 4.0,
-      crossAxisSpacing: 4.0,
     );
   }
 
