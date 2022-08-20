@@ -4,7 +4,7 @@
 
 ## Flutter-2.x branch: Flutter 2.x version
 
-**언어들: [English](README.md), [中文](README.zh-cn.md).** , 한국어(this file)
+**언어들: [영어](README.md), [중국어](README.zh-cn.md).** , 한국어(this file)
 
 ## 소개
 
