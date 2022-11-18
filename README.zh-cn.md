@@ -89,6 +89,6 @@ lib/
     邮箱: "eve.holt@reqres.in",
     密码: "pistol"
 
-感兴趣的朋友扫码进Flutter & Web技术交流群，我们一起讨论Flutter的未来。
+感兴趣的朋友扫码进QQ 群：610930944，我们一起讨论Flutter的未来。
 
-<img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/weixin.png" width="187" heght="333" />
+<img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/qq.jpg" width="187" heght="333" />
