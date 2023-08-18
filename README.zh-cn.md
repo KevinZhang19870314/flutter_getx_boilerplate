@@ -92,3 +92,7 @@ lib/
 感兴趣的朋友扫码进QQ 群：610930944，我们一起讨论Flutter的未来。
 
 <img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/master/assets/screenshot/qq.jpg" width="187" heght="333" />
+
+打赏开发者
+
+<img src="https://github.com/KevinZhang19870314/flutter_getx_boilerplate/blob/d1499e5e49ecad64ca83b3e17fa850402d1e3e25/assets/screenshot/wechatpay.jpg" width="187" heght="254" />
