@@ -1,6 +1,8 @@
 # flutter_getx_boilerplate
 
-## master branch: Fluter 3.0.5 version
+## master branch: Fluter 3.24 version
+
+## Fluter-3.0.5 branch: Fluter 3.0.5 version
 
 ## Flutter-2.x branch: Flutter 2.x version
 
